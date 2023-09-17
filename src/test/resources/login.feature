@@ -5,5 +5,4 @@ Feature: User can login to e-commerce site
     Then User can login successfully
     Examples:
         | username | password |
-        | salauddin@test.com | 12345 |
-        | testautouser1529@test.com | uqwV2%4d |
+        | Admin | admin123 |

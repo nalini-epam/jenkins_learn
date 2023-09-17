@@ -9,11 +9,11 @@ public class LoginPage {
 
     @FindBy(className = "login")
     WebElement linkLogin;
-    @FindBy(id = "email")
+    @FindBy(name = "username")
     WebElement txtEmail;
-    @FindBy(id = "passwd")
+    @FindBy(name = "password")
     WebElement txtPassword;
-    @FindBy(id = "SubmitLogin")
+    @FindBy(xpath = "//button[@type='submit']")
     WebElement btnSubmit;
     @FindBy(className = "logout")
     public WebElement linkLogout;
@@ -28,7 +28,7 @@ public class LoginPage {
 
     public void doLogin(String email, String password){
 
-        linkLogin.click();
+       // linkLogin.click();
         txtEmail.sendKeys(email);
         txtPassword.sendKeys(password);
         btnSubmit.click();
